@@ -1,0 +1,93 @@
+.users-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.user-stats {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.stat-card .ant-statistic-title {
+  color: var(--text-secondary);
+}
+
+.stat-card .ant-statistic-content-value {
+  color: var(--text-primary);
+}
+
+.users-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.users-toolbar {
+  margin-bottom: 16px;
+}
+
+.users-card .ant-table {
+  background: transparent !important;
+}
+
+.users-card .ant-table-thead > tr > th {
+  background: rgba(255, 45, 120, 0.05) !important;
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+}
+
+.users-card .ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-primary);
+}
+
+.users-card .ant-table-tbody > tr:hover > td {
+  background: rgba(255, 45, 120, 0.05) !important;
+}
+
+/* User Detail Modal */
+.user-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-avatar-section h4 {
+  color: var(--text-primary);
+  margin-bottom: 8px !important;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .stat-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .users-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .users-card .ant-table-thead > tr > th {
+  background: rgba(233, 30, 99, 0.05) !important;
+  color: #333 !important;
+}
+
+[data-theme="light"] .users-card .ant-table-tbody > tr:hover > td {
+  background: rgba(233, 30, 99, 0.03) !important;
+}

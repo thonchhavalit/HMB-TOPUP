@@ -1,0 +1,126 @@
+.card {
+  background: var(--gradient-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Clickable Card */
+.card--clickable {
+  cursor: pointer;
+}
+
+.card--clickable:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 0, 128, 0.3);
+}
+
+.card--clickable:active {
+  transform: translateY(-2px);
+}
+
+/* Selected State */
+.card--selected {
+  border-color: var(--accent-primary);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 0, 128, 0.1) 0%,
+    var(--bg-card) 100%
+  );
+  box-shadow: var(--glow-pink);
+}
+
+.card-selected-indicator {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  width: 24px;
+  height: 24px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-selected-indicator::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Disabled State */
+.card--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Game Card Variant */
+.card--game {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card--game:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4),
+    var(--glow-pink);
+}
+
+/* Package Card Variant */
+.card--package {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.card--package:hover {
+  border-color: var(--accent-primary);
+}
+
+/* Payment Card Variant */
+.card--payment {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* Glow Border Animation */
+.card--clickable::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-lg);
+  padding: 1px;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    transparent 40%,
+    var(--accent-primary) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  background-size: 300% 300%;
+  animation: shimmer 3s linear infinite;
+}
+
+.card--clickable:hover::before {
+  opacity: 1;
+}

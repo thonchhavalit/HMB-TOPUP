@@ -1,0 +1,302 @@
+.topup-page {
+  min-height: 100vh;
+  padding: 40px 24px 80px;
+}
+
+.topup-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.topup-header {
+  margin-bottom: 40px;
+}
+
+.topup-game-icon {
+  font-size: 48px;
+  filter: drop-shadow(0 0 20px rgba(255, 45, 120, 0.5));
+}
+
+/* Steps */
+.topup-steps {
+  margin-bottom: 40px;
+}
+
+.topup-steps .ant-steps-item-title {
+  color: #a0a0b0 !important;
+  font-size: 14px;
+}
+
+.topup-steps .ant-steps-item-process .ant-steps-item-title,
+.topup-steps .ant-steps-item-finish .ant-steps-item-title {
+  color: #fff !important;
+}
+
+/* Step Content Card */
+.step-content-card {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+  margin-bottom: 24px;
+}
+
+.step-content-card .ant-card-body {
+  padding: 32px;
+}
+
+.step-panel {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-label {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Package Cards */
+.package-card {
+  background: #0a0a0f !important;
+  border: 2px solid #2a2a3e !important;
+  border-radius: 12px !important;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  height: 100%;
+}
+
+.package-card:hover {
+  border-color: #ff5a9d !important;
+  transform: translateY(-4px) !important;
+}
+
+.package-card--selected {
+  border-color: #ff2d78 !important;
+  background: rgba(255, 45, 120, 0.1) !important;
+  box-shadow: 0 0 30px rgba(255, 45, 120, 0.3) !important;
+}
+
+.package-card .ant-card-body {
+  padding: 20px 16px;
+}
+
+.package-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.package-icon {
+  font-size: 24px;
+}
+
+.package-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.package-bonus {
+  font-size: 14px;
+  color: #00ff88;
+  font-weight: 600;
+}
+
+.package-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff2d78;
+}
+
+/* Payment Cards */
+.payment-card {
+  background: #0a0a0f !important;
+  border: 2px solid #2a2a3e !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+}
+
+.payment-card:hover {
+  border-color: #ff5a9d !important;
+}
+
+.payment-card--selected {
+  border-color: #ff2d78 !important;
+  background: rgba(255, 45, 120, 0.1) !important;
+  box-shadow: 0 0 30px rgba(255, 45, 120, 0.3) !important;
+}
+
+.payment-card .ant-card-body {
+  padding: 24px;
+}
+
+.payment-icon {
+  font-size: 32px;
+  color: #ff2d78;
+}
+
+/* Confirmation Card */
+.confirmation-card {
+  background: #0a0a0f !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 12px !important;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmation-total {
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #2a2a3e;
+}
+
+/* Navigation */
+.step-navigation {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+/* Processing Overlay */
+.processing-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .topup-page {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+}
+
+[data-theme="light"] .topup-game-icon {
+  filter: drop-shadow(0 0 20px rgba(233, 30, 99, 0.4));
+}
+
+[data-theme="light"] .topup-steps .ant-steps-item-title {
+  color: #666 !important;
+}
+
+[data-theme="light"] .topup-steps .ant-steps-item-process .ant-steps-item-title,
+[data-theme="light"] .topup-steps .ant-steps-item-finish .ant-steps-item-title {
+  color: #1a1a2e !important;
+}
+
+[data-theme="light"] .step-content-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-theme="light"] .input-label {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .package-card {
+  background: #ffffff !important;
+  border: 2px solid #e0e0e0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .package-card:hover {
+  border-color: #e91e63 !important;
+  box-shadow: 0 8px 25px rgba(233, 30, 99, 0.15) !important;
+}
+
+[data-theme="light"] .package-card--selected {
+  border-color: #e91e63 !important;
+  background: rgba(233, 30, 99, 0.08) !important;
+  box-shadow: 0 0 30px rgba(233, 30, 99, 0.2) !important;
+}
+
+[data-theme="light"] .package-number {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .package-price {
+  color: #e91e63;
+}
+
+[data-theme="light"] .payment-card {
+  background: #ffffff !important;
+  border: 2px solid #e0e0e0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .payment-card:hover {
+  border-color: #e91e63 !important;
+}
+
+[data-theme="light"] .payment-card--selected {
+  border-color: #e91e63 !important;
+  background: rgba(233, 30, 99, 0.08) !important;
+  box-shadow: 0 0 30px rgba(233, 30, 99, 0.2) !important;
+}
+
+[data-theme="light"] .payment-icon {
+  color: #e91e63;
+}
+
+[data-theme="light"] .confirmation-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+[data-theme="light"] .confirmation-total {
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .topup-page {
+    padding: 24px 16px 60px;
+  }
+
+  .step-content-card .ant-card-body {
+    padding: 20px;
+  }
+
+  .topup-game-icon {
+    font-size: 36px;
+  }
+
+  .topup-steps .ant-steps-item-title {
+    font-size: 12px;
+  }
+
+  .package-number {
+    font-size: 20px;
+  }
+
+  .step-navigation {
+    flex-direction: column-reverse;
+  }
+
+  .step-navigation .ant-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+.settings-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.settings-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.settings-tabs .ant-tabs-nav {
+  width: 200px;
+}
+
+.settings-tabs .ant-tabs-tab {
+  justify-content: flex-start;
+  padding: 12px 16px !important;
+}
+
+.settings-tabs .ant-tabs-tab-active {
+  background: rgba(255, 45, 120, 0.1);
+  border-radius: 8px;
+}
+
+.settings-tabs .ant-tabs-content-holder {
+  padding-left: 24px;
+  border-left: 1px solid var(--border-default);
+}
+
+.setting-group {
+  margin-bottom: 24px;
+}
+
+.setting-group h5 {
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.setting-items {
+  margin-top: 16px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.payment-card {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 8px !important;
+}
+
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .settings-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .settings-tabs .ant-tabs-tab-active {
+  background: rgba(233, 30, 99, 0.08);
+}
+
+[data-theme="light"] .setting-item {
+  background: #f8f9fa;
+}
+
+[data-theme="light"] .payment-card {
+  background: #f8f9fa !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .settings-tabs .ant-tabs-nav {
+    width: 100%;
+  }
+  
+  .settings-tabs .ant-tabs-content-holder {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-default);
+  }
+  
+  .settings-tabs {
+    flex-direction: column !important;
+  }
+  
+  .settings-tabs .ant-tabs-nav-list {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,58 @@
+.products-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.products-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.products-toolbar {
+  margin-bottom: 16px;
+}
+
+.products-card .ant-table {
+  background: transparent !important;
+}
+
+.products-card .ant-table-thead > tr > th {
+  background: rgba(255, 45, 120, 0.05) !important;
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+}
+
+.products-card .ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-primary);
+}
+
+.products-card .ant-table-tbody > tr:hover > td {
+  background: rgba(255, 45, 120, 0.05) !important;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .products-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .products-card .ant-table-thead > tr > th {
+  background: rgba(233, 30, 99, 0.05) !important;
+  color: #333 !important;
+}
+
+[data-theme="light"] .products-card .ant-table-tbody > tr:hover > td {
+  background: rgba(233, 30, 99, 0.03) !important;
+}

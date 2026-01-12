@@ -1,0 +1,165 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: auto !important;
+  padding: 0 24px !important;
+  line-height: normal !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 18px;
+  color: #ff2d78;
+  text-shadow: 0 0 10px rgba(255, 45, 120, 0.5);
+}
+
+/* Desktop Menu */
+.desktop-menu {
+  display: flex !important;
+}
+
+.desktop-menu .ant-menu-item {
+  color: #a0a0b0 !important;
+  font-weight: 500;
+}
+
+.desktop-menu .ant-menu-item:hover {
+  color: #ff2d78 !important;
+}
+
+.desktop-menu .ant-menu-item-selected {
+  color: #ff2d78 !important;
+}
+
+.desktop-menu .ant-menu-item-selected::after {
+  border-bottom-color: #ff2d78 !important;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  font-size: 18px;
+  margin-left: 8px;
+  color: var(--accent-primary);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--accent-primary-light) !important;
+  background: rgba(255, 45, 120, 0.1) !important;
+}
+
+/* Admin Link Button */
+.admin-link-btn {
+  font-size: 18px;
+  color: var(--accent-primary);
+  transition: all 0.3s ease;
+}
+
+.admin-link-btn:hover {
+  color: var(--accent-primary-light) !important;
+  background: rgba(255, 45, 120, 0.1) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 16px !important;
+  }
+
+  .logo-image {
+    height: 32px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+}
+
+/* Drawer Menu Styles */
+.ant-drawer .ant-menu-item {
+  height: 50px !important;
+  line-height: 50px !important;
+  margin: 4px 8px !important;
+  border-radius: 8px;
+}
+
+.ant-drawer .ant-menu-item:hover {
+  background: rgba(255, 45, 120, 0.1) !important;
+}
+
+.ant-drawer .ant-menu-item-selected {
+  background: rgba(255, 45, 120, 0.2) !important;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .app-header {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .logo-text {
+  color: #e91e63;
+  text-shadow: none;
+}
+
+[data-theme="light"] .desktop-menu .ant-menu-item {
+  color: #555 !important;
+}
+
+[data-theme="light"] .desktop-menu .ant-menu-item:hover {
+  color: #e91e63 !important;
+}
+
+[data-theme="light"] .desktop-menu .ant-menu-item-selected {
+  color: #e91e63 !important;
+}
+
+[data-theme="light"] .desktop-menu .ant-menu-item-selected::after {
+  border-bottom-color: #e91e63 !important;
+}
+
+[data-theme="light"] .theme-toggle-btn {
+  color: #e91e63;
+}
+
+[data-theme="light"] .theme-toggle-btn:hover {
+  background: rgba(233, 30, 99, 0.08) !important;
+}

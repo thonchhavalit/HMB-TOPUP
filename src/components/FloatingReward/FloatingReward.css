@@ -1,0 +1,174 @@
+.floating-reward {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.reward-trigger {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff2d78 0%, #7b2d8e 100%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(255, 45, 120, 0.4);
+  animation: bounce 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.reward-trigger:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.reward-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.reward-popup {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 240px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #12121a 100%);
+  border: 1px solid #ff2d7840;
+  border-radius: 16px;
+  padding: 20px;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.reward-content {
+  text-align: center;
+}
+
+.reward-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.reward-content h4 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.reward-content p {
+  color: #a0a0b0;
+  font-size: 13px;
+  margin: 0 0 16px 0;
+}
+
+.bonus {
+  color: #00ff88;
+  font-weight: 700;
+}
+
+.claim-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff2d78 0%, #7b2d8e 100%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.claim-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(255, 45, 120, 0.4);
+}
+
+.reward-timer {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 11px;
+  color: #ff9500;
+}
+
+/* Light Theme */
+[data-theme="light"] .reward-popup {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-color: #e91e6340;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .reward-content h4 {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .reward-content p {
+  color: #666;
+}
+
+[data-theme="light"] .bonus {
+  color: #4caf50;
+}
+
+[data-theme="light"] .close-btn:hover {
+  color: #1a1a2e;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .floating-reward {
+    bottom: 80px;
+    right: 16px;
+  }
+  
+  .reward-trigger {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .reward-popup {
+    width: 220px;
+    right: -10px;
+  }
+}

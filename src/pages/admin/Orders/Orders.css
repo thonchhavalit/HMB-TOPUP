@@ -1,0 +1,188 @@
+.orders-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+/* Stats */
+.order-stats {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.stat-card .ant-statistic-title {
+  color: var(--text-secondary);
+}
+
+.stat-card .ant-statistic-content-value {
+  color: var(--text-primary);
+}
+
+/* Filter Card */
+.filter-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+  margin-bottom: 24px;
+}
+
+.filter-card .ant-card-body {
+  padding: 16px 24px;
+}
+
+/* Orders Table Card */
+.orders-table-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+.orders-table-card .ant-table {
+  background: transparent !important;
+}
+
+.orders-table-card .ant-table-thead > tr > th {
+  background: rgba(255, 45, 120, 0.05) !important;
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+}
+
+.orders-table-card .ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--border-default) !important;
+  color: var(--text-primary);
+}
+
+.orders-table-card .ant-table-tbody > tr:hover > td {
+  background: rgba(255, 45, 120, 0.05) !important;
+}
+
+/* Pagination */
+.orders-table-card .ant-pagination {
+  margin: 16px 0 0 0;
+}
+
+.orders-table-card .ant-pagination-item {
+  background: var(--bg-secondary) !important;
+  border-color: var(--border-default) !important;
+}
+
+.orders-table-card .ant-pagination-item a {
+  color: var(--text-primary);
+}
+
+.orders-table-card .ant-pagination-item-active {
+  border-color: var(--accent-primary) !important;
+}
+
+.orders-table-card .ant-pagination-item-active a {
+  color: var(--accent-primary);
+}
+
+/* Modal */
+.ant-modal-content {
+  background: var(--bg-card) !important;
+}
+
+.ant-modal-header {
+  background: var(--bg-card) !important;
+  border-bottom: 1px solid var(--border-default) !important;
+}
+
+.ant-modal-title {
+  color: var(--text-primary) !important;
+}
+
+.ant-modal-close-x {
+  color: var(--text-secondary);
+}
+
+.ant-modal-footer {
+  border-top: 1px solid var(--border-default) !important;
+}
+
+.ant-descriptions-bordered .ant-descriptions-view {
+  border-color: var(--border-default);
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background: rgba(255, 45, 120, 0.05);
+  color: var(--text-secondary);
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-content {
+  color: var(--text-primary);
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .stat-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .filter-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .orders-table-card {
+  background: #ffffff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .orders-table-card .ant-table-thead > tr > th {
+  background: rgba(233, 30, 99, 0.05) !important;
+  color: #333 !important;
+}
+
+[data-theme="light"] .orders-table-card .ant-table-tbody > tr:hover > td {
+  background: rgba(233, 30, 99, 0.03) !important;
+}
+
+[data-theme="light"] .orders-table-card .ant-pagination-item {
+  background: #f8f9fa !important;
+}
+
+[data-theme="light"] .orders-table-card .ant-pagination-item-active {
+  border-color: #e91e63 !important;
+}
+
+[data-theme="light"] .orders-table-card .ant-pagination-item-active a {
+  color: #e91e63;
+}
+
+[data-theme="light"] .ant-modal-content {
+  background: #ffffff !important;
+}
+
+[data-theme="light"] .ant-modal-header {
+  background: #ffffff !important;
+}
+
+[data-theme="light"] .ant-descriptions-bordered .ant-descriptions-item-label {
+  background: rgba(233, 30, 99, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filter-card .ant-space {
+    width: 100%;
+  }
+  
+  .filter-card .ant-space-item {
+    width: 100%;
+  }
+}

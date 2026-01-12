@@ -1,0 +1,426 @@
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 60px 24px 80px;
+  overflow: hidden;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(ellipse at center, rgba(255, 45, 120, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  margin-bottom: 24px !important;
+}
+
+.hero-title-line {
+  display: block;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: #fff;
+}
+
+.hero-title-accent {
+  display: block;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  color: #ff2d78;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #a0a0b0;
+  margin-bottom: 32px !important;
+  line-height: 1.7;
+}
+
+.hero-btn {
+  height: 52px !important;
+  padding: 0 32px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.hero-btn-outline {
+  height: 52px !important;
+  padding: 0 32px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border: 2px solid #2a2a3e !important;
+  color: #fff !important;
+}
+
+.hero-btn-outline:hover {
+  border-color: #ff2d78 !important;
+  color: #ff2d78 !important;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-icon {
+  font-size: 120px;
+  filter: drop-shadow(0 0 40px rgba(255, 45, 120, 0.5));
+}
+
+/* Quick Section */
+.quick-section {
+  padding: 40px 0 60px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Section Styles */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  color: #fff !important;
+  margin-bottom: 12px !important;
+}
+
+.section-subtitle {
+  color: #a0a0b0;
+  font-size: 16px;
+}
+
+/* Games Section */
+.games-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(26, 26, 46, 0.5) 50%, transparent 100%);
+}
+
+.game-card {
+  background: #16161f !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.game-card .ant-card-body {
+  padding: 20px;
+}
+
+.game-card-banner {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-card-icon {
+  transform: scale(1.1);
+}
+
+.game-card-icon svg {
+  width: 80px;
+  height: 80px;
+}
+
+.game-card-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.game-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #ff2d78;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Trust Section */
+.trust-section {
+  padding: 60px 0;
+}
+
+.trust-badge-card {
+  text-align: center;
+  padding: 32px 24px;
+  background: rgba(255, 45, 120, 0.05);
+  border: 1px solid rgba(255, 45, 120, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.trust-badge-card:hover {
+  background: rgba(255, 45, 120, 0.1);
+  border-color: rgba(255, 45, 120, 0.4);
+  transform: translateY(-4px);
+}
+
+.trust-badge-icon {
+  margin-bottom: 8px;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 80px 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(26, 26, 46, 0.3) 100%);
+}
+
+.step-card {
+  text-align: center;
+  padding: 32px 20px;
+  background: #12121a;
+  border: 1px solid #2a2a3e;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: #ff2d78;
+  box-shadow: 0 0 30px rgba(255, 45, 120, 0.2);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #ff2d78 0%, #7b2d8e 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 20px rgba(255, 45, 120, 0.4);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0 100px;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, rgba(255, 45, 120, 0.1) 0%, rgba(123, 45, 142, 0.1) 100%) !important;
+  border: 1px solid rgba(255, 45, 120, 0.3) !important;
+  border-radius: 20px !important;
+  text-align: center;
+  padding: 60px 40px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 45, 120, 0.1) 0%, transparent 50%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Light Theme Styles */
+[data-theme="light"] .hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+}
+
+[data-theme="light"] .hero-bg-glow {
+  background: radial-gradient(ellipse at center, rgba(233, 30, 99, 0.15) 0%, transparent 70%);
+}
+
+[data-theme="light"] .hero-title-line {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .hero-title-accent {
+  color: #e91e63;
+}
+
+[data-theme="light"] .hero-subtitle {
+  color: #555;
+}
+
+[data-theme="light"] .hero-btn-outline {
+  border: 2px solid #d0d0d0 !important;
+  color: #1a1a2e !important;
+}
+
+[data-theme="light"] .hero-btn-outline:hover {
+  border-color: #e91e63 !important;
+  color: #e91e63 !important;
+}
+
+[data-theme="light"] .hero-icon {
+  filter: drop-shadow(0 0 40px rgba(233, 30, 99, 0.4));
+}
+
+[data-theme="light"] .section-title {
+  color: #1a1a2e !important;
+}
+
+[data-theme="light"] .section-subtitle {
+  color: #666;
+}
+
+[data-theme="light"] .games-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 50%, #ffffff 100%);
+}
+
+[data-theme="light"] .game-card {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-theme="light"] .game-card:hover {
+  box-shadow: 0 8px 30px rgba(233, 30, 99, 0.15) !important;
+  transform: translateY(-4px);
+}
+
+[data-theme="light"] .game-card-title {
+  color: #1a1a2e;
+}
+
+[data-theme="light"] .game-card-action {
+  color: #e91e63;
+}
+
+[data-theme="light"] .trust-section {
+  background: #f8f9fa;
+}
+
+[data-theme="light"] .trust-badge-card {
+  background: rgba(233, 30, 99, 0.05);
+  border: 1px solid rgba(233, 30, 99, 0.15);
+}
+
+[data-theme="light"] .trust-badge-card:hover {
+  background: rgba(233, 30, 99, 0.1);
+  border-color: rgba(233, 30, 99, 0.3);
+}
+
+[data-theme="light"] .how-it-works {
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+[data-theme="light"] .step-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .step-card:hover {
+  border-color: #e91e63;
+  box-shadow: 0 8px 25px rgba(233, 30, 99, 0.15);
+}
+
+[data-theme="light"] .step-number {
+  background: linear-gradient(135deg, #e91e63 0%, #9c27b0 100%);
+  box-shadow: 0 0 20px rgba(233, 30, 99, 0.3);
+}
+
+[data-theme="light"] .cta-section {
+  background: #f0f2f5;
+}
+
+[data-theme="light"] .cta-card {
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.08) 0%, rgba(156, 39, 176, 0.08) 100%) !important;
+  border: 1px solid rgba(233, 30, 99, 0.2) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 16px 60px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-icon {
+    font-size: 80px;
+  }
+
+  .hero-visual {
+    padding: 20px;
+  }
+
+  .game-card-banner {
+    height: 120px;
+  }
+
+  .game-card-icon svg {
+    width: 56px;
+    height: 56px;
+  }
+
+  .step-card {
+    padding: 24px 16px;
+  }
+
+  .cta-card {
+    padding: 40px 24px !important;
+  }
+}

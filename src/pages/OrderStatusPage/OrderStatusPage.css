@@ -1,0 +1,136 @@
+.order-status-page {
+  min-height: 100vh;
+  padding: 40px 24px 80px;
+}
+
+.order-status-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Success Result */
+.success-result {
+  background: rgba(0, 255, 136, 0.05);
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  border-radius: 16px;
+  margin-bottom: 32px;
+  padding: 40px 24px;
+}
+
+.success-result .ant-result-title {
+  color: #00ff88 !important;
+}
+
+.success-result .ant-result-subtitle {
+  color: #a0a0b0 !important;
+}
+
+/* Search Card */
+.search-card {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+  margin-bottom: 32px;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+/* Loading Section */
+.loading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+}
+
+/* Order Results */
+.order-results {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Status Result */
+.status-result {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+  margin-bottom: 24px;
+}
+
+.status-result .ant-result-icon .anticon {
+  font-size: 64px;
+}
+
+/* Progress Card */
+.progress-card {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+  margin-bottom: 24px;
+}
+
+.progress-card .ant-card-body {
+  padding: 32px;
+}
+
+/* Order Info Card */
+.order-info-card {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+}
+
+.order-info-card .ant-card-head {
+  border-bottom-color: #2a2a3e !important;
+}
+
+.order-info-card .ant-card-head-title {
+  color: #fff;
+}
+
+.order-info-card .ant-descriptions-item-label {
+  color: #a0a0b0 !important;
+}
+
+.order-info-card .ant-descriptions-item-content {
+  color: #fff !important;
+}
+
+/* Help Card */
+.help-card {
+  background: #12121a !important;
+  border: 1px solid #2a2a3e !important;
+  border-radius: 16px !important;
+  margin-top: 48px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-status-page {
+    padding: 24px 16px 60px;
+  }
+
+  .search-card {
+    padding: 24px 16px;
+  }
+
+  .status-result .ant-result-icon .anticon {
+    font-size: 48px;
+  }
+
+  .progress-card .ant-card-body {
+    padding: 20px;
+  }
+}
