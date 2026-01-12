@@ -4,7 +4,7 @@ import { ThunderboltOutlined, SafetyCertificateOutlined, RocketOutlined, Custome
 import LiveActivity from '../../components/LiveActivity/LiveActivity';
 import QuickTopUp from '../../components/QuickTopUp/QuickTopUp';
 import FloatingReward from '../../components/FloatingReward/FloatingReward';
-import { MLIcon, FFIcon, DiamondIcon } from '../../components/GameIcons/GameIcons';
+import { MLIcon, FFIcon } from '../../components/GameIcons/GameIcons';
 import './HomePage.css';
 
 const { Title, Text, Paragraph } = Typography;
